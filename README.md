@@ -1,5 +1,7 @@
 # Leveraging Twitter to Map Natural Disasters
 
+![Twitter logo](https://www.itsnicethat.com/system/files/062012/4fd07cea5c3e3c0d810000db/images_slice_large/Twitternew.jpg?1438264585)
+
 **Readme in Progress**
 
 **Waiting on final part three folder and updates to Readme**
