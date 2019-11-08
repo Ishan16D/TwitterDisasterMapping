@@ -1,6 +1,9 @@
 # Leveraging Twitter to Map Natural Disasters
 
 **Readme in Progress**
+
+**Waiting on final part three folder and updates to Readme**
+
 Project by: Garrett Bradley, Ishan Deulkar, and Cory Rutkowski
 
 ## Problem Statement
