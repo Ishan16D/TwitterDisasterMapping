@@ -62,23 +62,25 @@ Our modeling process was broken into three main steps. First we had to create a 
 2. TfidfVectorizer and Naive Bayes
 3. TfidfVectorizer and Logistic Regression
 
-We utilized a GridSearchCV to generate optimal parameters for our models. We excluded english stop-words from our models to decrease noise. We used a lemmatizing function to pass through the vectorizer to focus just on the roots of the words. A parameter was set as well to include a CountVectorizer.
+We utilized a GridSearchCV to generate optimal parameters for our models. We excluded english stop-words from our models to decrease noise. We used a lemmatizing function to pass through the vectorizer to focus just on the roots of the words. A parameter was set as well to include not use the idf (CountVectorizer).
 
 Best model features:
 
-1. CountVectorizer and Random Forests
-- max_features = 
-- ngram_range = ()
-- stop_words = stop_words
-- max_depth = 
-- min_samples_leaf = 
-- min_samples_split = 
-- n_estimators =   
+1.Random Forests
+  - rf__max_depth: 6
+  - rf__max_features: None
+  - rf__n_estimators: 5
+  - tf__max_features: 3000
+  - tf__ngram_range: (1, 2),
+  - tf__stop_words: 'english'
+  - tf__use_idf: True 
 
-2. CountVectorizer and Naive Bayes
-- max_features = 
-- ngram_range = ()
-- stop_words = stop_words
+2. Naive Bayes
+  - nb__alpha: 1
+  - tf__max_features: 5000
+  - tf__ngram_range: (1, 2)
+  - tf__stop_words: 'english'
+  - tf__use_idf': False
 
                 
 #### Model Scores
@@ -87,8 +89,8 @@ Baseline accuracy for the dataset was 81%
 
 *Accuracy is not a definitive metric as the labels are not true but rather generated through the loop*
 
-1. Random Forests - accuracy score of 
-3. Naive Bayes - accuracy score of 
+1. Random Forests - accuracy score of 87%
+3. Naive Bayes - accuracy score of 90%
 
 Our best classification model was the Naive Bayes. 
 
@@ -137,6 +139,7 @@ Based on our results this project is something that could be implemented into fu
 
 There were several areas that we wanted to improve on:
 
+__Refine Classification Process:__ Develop a labeled tweet database or improve the process of classifying unlabeled text through an improved natural language processing approach.
 __Model Date and Time:__ Incorporating time into our model would allow for even more up to date information for the disaster relief teams to be able to utilize to a more effective degree.
 __Map Interactions:__ Adding additional interactive features to our maps, such as being able to see the specific tweet for each coordinate.
 __Additional Applications:__ Expand this into a functioning mobile/web application would allow for more features and resources to be available to the rescue organizations.
