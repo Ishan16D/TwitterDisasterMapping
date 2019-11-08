@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f254ce41cb59488fa393a95aa439caaa {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_f254ce41cb59488fa393a95aa439caaa" ></div>
+        
+</body>
+<script>    
+    
+            var map_f254ce41cb59488fa393a95aa439caaa = L.map(
+                "map_f254ce41cb59488fa393a95aa439caaa",
+                {
+                    center: [29.7604, -95.3698],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 8,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_9d1c8bb371794e98a4ce8f7090c0c5bb = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_f254ce41cb59488fa393a95aa439caaa);
+        
+    
+            var marker_cluster_5f7bdaddcb8e410292d01f98296be23a = L.markerClusterGroup(
+                {}
+            );
+            map_f254ce41cb59488fa393a95aa439caaa.addLayer(marker_cluster_5f7bdaddcb8e410292d01f98296be23a);
+        
+    
+            var marker_2cd84b50a57c4eb485a46626568d5db1 = L.marker(
+                [29.6784058, -95.4633444],
+                {"clusteredMarker": true}
+            ).addTo(marker_cluster_5f7bdaddcb8e410292d01f98296be23a);
+        
+    
+        var popup_ca9bf73598a14265b5d04aace8dc44ac = L.popup({"maxWidth": "100%"});
+
+        
+            var html_542e75a528e54ce69bfcb551745353a2 = $(`<div id="html_542e75a528e54ce69bfcb551745353a2" style="width: 100.0%; height: 100.0%;">("@houstonpolice #HarveyRescue #HarveySOS 9407 Cranleigh Ct. Houston 77096 PLEASE FAMILY OF 5 NEED HELP. They're trapped on the roof #houston", '9407 Cranleigh Ct. Houston 77096')</div>`)[0];
+            popup_ca9bf73598a14265b5d04aace8dc44ac.setContent(html_542e75a528e54ce69bfcb551745353a2);
+        
+
+        marker_2cd84b50a57c4eb485a46626568d5db1.bindPopup(popup_ca9bf73598a14265b5d04aace8dc44ac)
+        ;
+
+        
+    
+    
+            var marker_9a797bb0386a4341899efa06146fdbbb = L.marker(
+                [29.8551516, -95.323505099],
+                {"clusteredMarker": true}
+            ).addTo(marker_cluster_5f7bdaddcb8e410292d01f98296be23a);
+        
+    
+        var popup_33e0775fee434510be594dc20132c608 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_160a15f280084b1f8598413c668643c9 = $(`<div id="html_160a15f280084b1f8598413c668643c9" style="width: 100.0%; height: 100.0%;">("I've got a scared friend at 4724 Amalie St. please send help @KHOU @houstonpolice @abc13houston @HoustonTX  ", '4724 Amalie St Houston')</div>`)[0];
+            popup_33e0775fee434510be594dc20132c608.setContent(html_160a15f280084b1f8598413c668643c9);
+        
+
+        marker_9a797bb0386a4341899efa06146fdbbb.bindPopup(popup_33e0775fee434510be594dc20132c608)
+        ;
+
+        
+    
+    
+            var marker_309477ea63fb44dd872ceac3d33faf93 = L.marker(
+                [29.465968099, -95.059360599],
+                {"clusteredMarker": true}
+            ).addTo(marker_cluster_5f7bdaddcb8e410292d01f98296be23a);
+        
+    
+        var popup_c62857835e3c4a31a8891e8f0bf0971e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_796dec3140d84437bfdd894b379673bd = $(`<div id="html_796dec3140d84437bfdd894b379673bd" style="width: 100.0%; height: 100.0%;">("My FIL Frank Emmitte is trapped 3226 Ave G with 4-5' water. He is elderly, cannot walk well. Pls help, retweet, send info #HurricaneHarvery", '8015 Serenity Court Houston, TX')</div>`)[0];
+            popup_c62857835e3c4a31a8891e8f0bf0971e.setContent(html_796dec3140d84437bfdd894b379673bd);
+        
+
+        marker_309477ea63fb44dd872ceac3d33faf93.bindPopup(popup_c62857835e3c4a31a8891e8f0bf0971e)
+        ;
+
+        
+    
+    
+            var marker_234d750f18ee4d63a6f92d8cf0cb8df9 = L.marker(
+                [29.6948069, -95.422081499],
+                {"clusteredMarker": true}
+            ).addTo(marker_cluster_5f7bdaddcb8e410292d01f98296be23a);
+        
+    
+        var popup_1eae5cae0a654d14a67dd58f8626a10d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3ec2f0d1fe3e4836a71e4b8a6303ee8f = $(`<div id="html_3ec2f0d1fe3e4836a71e4b8a6303ee8f" style="width: 100.0%; height: 100.0%;">(' PLEASE SEND HELP AND RETWEET, Kristi Hammerly is stuck at 8015 Serenity Court Houston, TX and needs immediate help! #HurricaneHarvery', '5400 Bayou Dr. Dickson, TX')</div>`)[0];
+            popup_1eae5cae0a654d14a67dd58f8626a10d.setContent(html_3ec2f0d1fe3e4836a71e4b8a6303ee8f);
+        
+
+        marker_234d750f18ee4d63a6f92d8cf0cb8df9.bindPopup(popup_1eae5cae0a654d14a67dd58f8626a10d)
+        ;
+
+        
+    
+    
+            var marker_4c2c7e2c26b344259983d8b57ef204dc = L.marker(
+                [29.4494273, -95.0609667],
+                {"clusteredMarker": true}
+            ).addTo(marker_cluster_5f7bdaddcb8e410292d01f98296be23a);
+        
+    
+        var popup_f7de5e9b220c4f87b4b8c4c4a1bd3d36 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ad2ca9396d2649ba9306ba8e59f1b6c3 = $(`<div id="html_ad2ca9396d2649ba9306ba8e59f1b6c3" style="width: 100.0%; height: 100.0%;">('A mom trapped in #HoustonFloods plz help:5400 Bayou Dr. Dickson, TX her name Is Rachel Patrick. Please send #HoustonRescue #Rescue #houston', '3226 Ave G Houston')</div>`)[0];
+            popup_f7de5e9b220c4f87b4b8c4c4a1bd3d36.setContent(html_ad2ca9396d2649ba9306ba8e59f1b6c3);
+        
+
+        marker_4c2c7e2c26b344259983d8b57ef204dc.bindPopup(popup_f7de5e9b220c4f87b4b8c4c4a1bd3d36)
+        ;
+
+        
+    
+    
+            var marker_b496b4c111004b1db8a6e7678025ce81 = L.marker(
+                [29.9147006, -93.9485301],
+                {"clusteredMarker": true}
+            ).addTo(marker_cluster_5f7bdaddcb8e410292d01f98296be23a);
+        
+    
+        var popup_06a6a172a05842c88ccbdd853f48e925 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_369933dfb7974a4789b4fe9ab0fdb5ff = $(`<div id="html_369933dfb7974a4789b4fe9ab0fdb5ff" style="width: 100.0%; height: 100.0%;">('#HarveySOS   In Port Arthur  on Big Bend Avenue off of 39th St. approx. 18 people stuck on 2nd fl. Need help asap', 'Big Bend Avenue, 39th St., Port Arthur')</div>`)[0];
+            popup_06a6a172a05842c88ccbdd853f48e925.setContent(html_369933dfb7974a4789b4fe9ab0fdb5ff);
+        
+
+        marker_b496b4c111004b1db8a6e7678025ce81.bindPopup(popup_06a6a172a05842c88ccbdd853f48e925)
+        ;
+
+        
+    
+    
+            var marker_0220c11c0cb54e2aa91dab1d1fde8143 = L.marker(
+                [29.8748434, -93.9523373999999],
+                {"clusteredMarker": true}
+            ).addTo(marker_cluster_5f7bdaddcb8e410292d01f98296be23a);
+        
+    
+        var popup_008abed9fdf34ca2b8e3b423dec6b932 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cdcf1fe6f87e47ba8626ac59a89396db = $(`<div id="html_cdcf1fe6f87e47ba8626ac59a89396db" style="width: 100.0%; height: 100.0%;">('My great grandfather needs a rescue at 340 West 17th St. Port Arthur, TX 77640 - still needs help as of 53 mins ago (@tierrab19) #HarveySOS', '340 West 17th St. Port Arthur, TX 77640')</div>`)[0];
+            popup_008abed9fdf34ca2b8e3b423dec6b932.setContent(html_cdcf1fe6f87e47ba8626ac59a89396db);
+        
+
+        marker_0220c11c0cb54e2aa91dab1d1fde8143.bindPopup(popup_008abed9fdf34ca2b8e3b423dec6b932)
+        ;
+
+        
+    
+    
+            var marker_6c0553fbb2da40ec9d52bcbb832086a0 = L.marker(
+                [29.91, -93.9399],
+                {"clusteredMarker": true}
+            ).addTo(marker_cluster_5f7bdaddcb8e410292d01f98296be23a);
+        
+    
+        var popup_87e72ddd139545ff9a6a33dc76d8fabe = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7d8b824b235843db872e1b7f2274a1de = $(`<div id="html_7d8b824b235843db872e1b7f2274a1de" style="width: 100.0%; height: 100.0%;">('@HarveyRescue 3 adults and 4 children need help. 3605 Jimmy Johnson Blvd Apt. 1002 Port Arthur TX 77642. #HarveySOS', '3605 Jimmy Johnson Blvd Apt. 1002 Port Arthur TX 77642')</div>`)[0];
+            popup_87e72ddd139545ff9a6a33dc76d8fabe.setContent(html_7d8b824b235843db872e1b7f2274a1de);
+        
+
+        marker_6c0553fbb2da40ec9d52bcbb832086a0.bindPopup(popup_87e72ddd139545ff9a6a33dc76d8fabe)
+        ;
+
+        
+    
+</script>
