@@ -120,7 +120,10 @@ Using all of the Lat. and Long. coordinates we marked them all on a map using Go
 
 The interactive map html file can be found in the Mapping subfolder.
 
-Example map: 
+Example maps
+
+![Zoomed out map of Houston with clusters](Images/map1.PNG)
+![Zoomed in map with specific location and tooltip](Images/map3.PNG)
 
 
 ### Constraints/Limitations
