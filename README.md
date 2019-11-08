@@ -140,11 +140,17 @@ Based on our results this project is something that could be implemented into fu
 There were several areas that we wanted to improve on:
 
 __Refine Classification Process:__ Develop a labeled tweet database or improve the process of classifying unlabeled text through an improved natural language processing approach.
+
 __Model Date and Time:__ Incorporating time into our model would allow for even more up to date information for the disaster relief teams to be able to utilize to a more effective degree.
+
 __Map Interactions:__ Adding additional interactive features to our maps, such as being able to see the specific tweet for each coordinate.
+
 __Additional Applications:__ Expand this into a functioning mobile/web application would allow for more features and resources to be available to the rescue organizations.
+
 __Specialized Hashtag:__ For every natural disaster, having FEMA/other disaster relief organizations work with Twitter directly to create a specific hashtag related to emergency related tweets. This way anyone who needs immediate assistance can include this hashtag in their tweets and it would make it much easier for the model to be able to sort tweets looking for this specific hashtag.
+
 __Other Social Media:__ Expanding this model to look at information coming from different forms of social media (Snapchat, Instagram) would allow additional resources for people in need to reach out for help.
+
 __Database Creation:__ Having pre-made street/address databases for as many cities as possible before the disaster occurs would greatly decrease the amount of time required to process all of the necessary information in order to generate our disaster map.
 
 
