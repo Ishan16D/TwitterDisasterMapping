@@ -122,8 +122,13 @@ The interactive map html file can be found in the Mapping subfolder.
 
 Example maps
 
-![Zoomed out map of Houston with clusters](Images/map1.PNG)
-![Zoomed in map with specific location and tooltip](Images/map3.PNG)
+Zoomed out map of Houston with clusters
+
+![Zoomed out map of Houston with clusters](Images/map_zo.PNG)
+
+Zoomed in map with specific location and tooltip
+
+![Zoomed in map with specific location and tooltip](Images/map_zi.PNG)
 
 
 ### Constraints/Limitations
