@@ -109,14 +109,17 @@ The Naive Bayes and Random Forest classifiers were used to predict the urgency o
 
 #### Address Model
 
-Once we sorted our tweets into 'Emergency' related, we then needed to collect of the physical addresses contained within the tweets. Using Google Maps API we created a database of all street names within the Houston area. Using a combination of methods, we were able to pull out the physical street and street number address from specific tweets. We did this via:
-- Pre-built Address parsing tools 
-- Manual regexp & string manipulation 
-- Cross referencing addresses against known street names
-- Passing partial addresses into multiple geocoders for validation
-This allowed us to then translate these addresses into Latitude and Longitude coordinates for mapping.
+Once we sorted our tweets into ‘Emergency’ related, we then investigated whether the tweets contained physical address components and how to extract this text from the tweet. Using geographic.org’s list of Google street view streets we created a database by scraping all street names for the greater Houston area. Using a combination of methods, we were able to filter the emergency tweets and extract the physical street and street number address from tweets with addresses. We did this through the following:
 
-In the end there were 8 emergency tweets from which we were able pull location data.
+- Cross referencing tweets against known streets list
+
+- Custom regular expressions & string manipulation
+
+- Pre-built open source address parsing tools: Libpostal and USaddress
+
+- Passing partial addresses into multiple geocoders for validation and lat/long generation: Google and Geocodio
+
+Ultimately, the open source address parsing tools were instrumental in extracting enough of the address to pass into the geocoders for successful geo coordinate generation. This allowed us to translate the address into Latitude and Longitude coordinates for mapping.  In the end, we identified 8 emergency tweets from which we were able to pull location data.
 
 
 ### Mapping:
