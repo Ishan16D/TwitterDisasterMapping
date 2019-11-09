@@ -169,6 +169,10 @@ __Other Social Media:__ Expanding this model to look at information coming from 
 
 __Database Creation:__ Having pre-made street/address databases for as many cities as possible before the disaster occurs would greatly decrease the amount of time required to process all of the necessary information in order to generate our disaster map.
 
+__Location Specific:__
+
+Location modeling could be improved by refining and automating many of the processing, data transfer, and output extraction steps.  These include further tuning the regexp method for prepocessing tweet prior to feed into address parser.  Refine the method for extracting the address parser component output for automated validation and transfer to Geocoders.  Automate the full processing pipeline of filtering tweets, extracting approximate address, parsing address, validating and combining parser output, passing output into geocoder, and extracting geocoder coordinates output.
+
 
 ### Slides
 
