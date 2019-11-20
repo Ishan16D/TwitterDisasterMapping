@@ -2,9 +2,6 @@
 
 ![Twitter logo](https://www.itsnicethat.com/system/files/062012/4fd07cea5c3e3c0d810000db/images_slice_large/Twitternew.jpg?1438264585)
 
-**Readme in Progress**
-
-**Waiting on final part three folder and updates to Readme**
 
 Project by: Garrett Bradley, Ishan Deulkar, and Cory Rutkowski
 
@@ -12,7 +9,7 @@ Project by: Garrett Bradley, Ishan Deulkar, and Cory Rutkowski
 
 During a Natural Disaster how can we utilize Social Media to help locate specific areas that require immediate assistance?
 
-During any natural disaster one of the first areas of focus should be on rescuing people in need of immediate assistance. However, due to the nature of these events this isn't always easily possible. This can be on account of downed power and phone lines which make communicationn near impossible at times. We set out to try to utilize social media, specifically Twitter, to see if its users' tweets can better help inform emergency responders of where to focus their rescue efforts.
+During any natural disaster one of the first areas of focus should be on rescuing people in need of immediate assistance. However, due to the nature of these events this isn't always easily possible. This can be on account of downed power and phone lines which make communication near impossible at times. We set out to try to utilize social media, specifically Twitter, to see if its users' tweets can better help inform emergency responders of where to focus their rescue efforts.
 
 ## Executive Summary
 
@@ -28,7 +25,7 @@ In order to complete our goal we followed several steps.
 First, we compiled tweets related to Hurricane Harvey during the time period of August 17, 2017 - September 9, 2017 into a pandas DataFrame. These tweets were to be analyzed for emergency requests and then mapped.
 We needed to create a model in order to be able to categorize our tweets as either 'Emergency' or 'Non-Emergency' related. We used a pre-made dataset from figure-eight.com that already classified messages into various emergency related categories to train a classifier model. The message data was unlabeled, so we implemented a loop to label messages are 'Emergency' using those emergency related categories and whether or not a message was direct (rather than being news).
 Once our model was successfully trained, we ran it on our Hurricane Harvey tweets dataset to pull out all of the 'Emergency' tweets.
-Next we used an a set of loops and parsers to analyze our 'Emergency' related tweets, looking for those related to requests for aid/assistance, to focus on those tweets containing a physical address in the body of the text. Using these addresses, we converted them in to Latitude and Longitude coordinates and then visualized each tweet onto a Houston based map. Our goal was for rescue coordiators to be able to use this map to strategize and implement their best tactics on where to focus their rescue efforts.
+Next we used a series of loops and street name lookup to analyze our 'Emergency' related tweets, looking for those related to requests for aid/assistance, to focus on those tweets containing a physical address in the body of the text. We converted the addresses into Latitude and Longitude coordinates using Google geocoder and then visualized each tweet onto a Houston based map. Our goal was for rescue coordiators to be able to use this map to strategize and implement their best tactics on where to focus their rescue efforts.
 
 
 ### Data:
@@ -115,7 +112,7 @@ Once we sorted our tweets into ‘Emergency’ related, we then investigated whe
 
 - Custom regular expressions & string manipulation
 
-- Pre-built open source address parsing tools: Libpostal and USaddress
+- Pre-built open source address parsing tool: Libpostal 
 
 - Passing partial addresses into multiple geocoders for validation and lat/long generation: Google and Geocodio
 
@@ -169,9 +166,7 @@ __Other Social Media:__ Expanding this model to look at information coming from 
 
 __Database Creation:__ Having pre-made street/address databases for as many cities as possible before the disaster occurs would greatly decrease the amount of time required to process all of the necessary information in order to generate our disaster map.
 
-__Location Specific:__
-
-Location modeling could be improved by refining and automating many of the processing, data transfer, and output extraction steps.  These include further tuning the regexp method for prepocessing tweet prior to feed into address parser.  Refine the method for extracting the address parser component output for automated validation and transfer to Geocoders.  Automate the full processing pipeline of filtering tweets, extracting approximate address, parsing address, validating and combining parser output, passing output into geocoder, and extracting geocoder coordinates output.
+__Location Specific:__ Refine address extraction with an approximate address extraction using expanded street database lookup. Refine data flow through entire location modeling pipeline, by connecting all stages from tweet filter, address extraction, geocoding, and dataframe column creation into one function.
 
 
 ### Slides
@@ -185,4 +180,5 @@ You can view the [presentation slides](https://docs.google.com/presentation/d/10
 - [Kaggle Hurricane Harvey Tweets Dataset](https://www.kaggle.com/dan195/hurricaneharvey)
 - [NTU Hurricane Harvey Tweets Dataset](Phillips, Mark Edward. Hurricane Harvey Twitter Dataset, dataset, 2017-08-18/2017-09-22; https://digital.library.unt.edu/ark:/67531/metadc993940/: accessed January 29, 2018, University of North Texas Libraries, Digital Library,digital.library.unt.edu)
 - [Model Training Dataset](https://www.figure-eight.com/dataset/combined-disaster-response-data/)
+- [Libpostal Address Parsing Library](https://github.com/openvenues/pypostal)
 
